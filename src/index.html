@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="rocket" src="images/rocket.png"  width="250px" height="300px" >
+        <img class="planet" src="images/mars.png" width="700px" height="600px" >
+    </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" id="inp1" placeholder="Enter password">
+                <input type="submit" id="inp2" value="OK">
+                <div class="check-buttons">
+                    <input type="checkbox" name="checkbox" disabled onchange="checkMax(this)">
+                    <input type="checkbox" name="checkbox" disabled onchange="checkMax(this)">
+                    <input type="checkbox" name="checkbox" disabled onchange="checkMax(this)">
+                    <input type="checkbox" name="checkbox" disabled onchange="checkMax(this)">
+                    <input type="checkbox" name="checkbox" disabled onchange="checkMax(this)">
+                    <input type="checkbox" name="checkbox" disabled onchange="checkMax(this)">
+                </div>
+                <div class="levers" >
+                    <input type="range" name="levers" aria-orientation="vertical" disabled onchange="checkMax(this)">
+                    <input type="range" name="levers" aria-orientation="vertical" disabled onchange="checkMax(this)">
+                    <input type="range" name="levers" aria-orientation="vertical" disabled onchange="checkMax(this)">
+                    <input type="range" name="levers" aria-orientation="vertical" disabled onchange="checkMax(this)">
+                    <input type="range" name="levers" aria-orientation="vertical" disabled onchange="checkMax(this)">
+                </div>
+                <input type="submit" value="LAUNCH" id="launch" disabled >
+            </div>
+        </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
+
